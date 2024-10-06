@@ -1,5 +1,6 @@
 # HW_Java_back
-This set contains my solutions for Java backend homeworks
+##  *This set contains my solutions for Java backend homeworks*
+<details> <summary>22_PrefixSuffix (Sets)</summary>
 
 ### Write application PrefixSuffix 
 
@@ -20,4 +21,4 @@ You must to write 2 implementation
 - for TreeSet
 
 You will not have duplicate code in your implementations
-
+</details>
