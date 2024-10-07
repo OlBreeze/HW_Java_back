@@ -22,3 +22,8 @@ You must to write 2 implementation
 
 You will not have duplicate code in your implementations
 </details>
+<details> <summary> 22-1 tree-collections: Система подбора кандидатов </summary>
+	Задача взята с ресурса:  
+	
+https://github.com/netology-code/java-homeworks/tree/master/tree-collections/4.5.2  
+</details>
