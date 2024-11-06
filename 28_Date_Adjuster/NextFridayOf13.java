@@ -18,3 +18,22 @@ public class NextFridayOf13 implements TemporalAdjuster{
 		}
 	}
 }
+//------------- Application
+
+package my.adj;
+
+import java.time.LocalDate;
+
+
+public class DateOperationApp {
+
+	public static void main(String[] args) {
+		LocalDate date = LocalDate.now();
+		System.out.println(date.with(new NextFridayOf13()));
+		 
+		LocalDate date1 = LocalDate.of(2024, 12, 13); 
+		System.out.println(date1.with(new NextFridayOf13()));
+
+	}
+
+}
