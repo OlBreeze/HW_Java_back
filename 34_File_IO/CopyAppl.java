@@ -33,7 +33,7 @@ public class CopyAppl {
 		
 		try {
 			in = new FileInputStream(src);
-			out = new FileOutputStream(dst);
+			out = new FileOutputStream(dst, true);
 			
 			long start = System.currentTimeMillis();
 	    	
