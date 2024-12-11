@@ -195,4 +195,19 @@ class RegExpTest {
 		assertFalse(RegEx.checkDateFormatUS("2020-121-30"));
 	}
 
+	@Test
+	void testIsIPv4() {
+		assertTrue(RegEx.isIPv4("1.2.3.4"));
+		assertTrue(RegEx.isIPv4("255.0.13.40"));
+		assertTrue(RegEx.isIPv4("0.0.0.0"));
+		assertTrue(RegEx.isIPv4("255.255.255.255"));
+		assertFalse(RegEx.isIPv4("256.255.255.255"));
+		assertFalse(RegEx.isIPv4("-2.255.255.255"));
+		assertFalse(RegEx.isIPv4("255.255.255.255."));
+		assertFalse(RegEx.isIPv4("255.255.255"));
+		assertFalse(RegEx.isIPv4("255.255"));
+		assertFalse(RegEx.isIPv4("255"));
+		assertFalse(RegEx.isIPv4(".56.255.255.255"));
+	}
+
 }
