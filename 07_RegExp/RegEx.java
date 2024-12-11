@@ -61,5 +61,11 @@ public class RegEx {
 		return string.matches("\\d{4}-((0[1-9])|(1[0-2]))-((0[1-9])|([12][0-9])|(3[01]))");
 	}
 	
-
+		public static boolean isIPv4(String string) {
+		String regex_0_255 = "\\d|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5]";
+		String regex = String.format("((%1$s)\\.){3}(%1$s)", regex_0_255);
+//		String regex = String.format("((%s)\\.){3}(%s)", regex_0_255, regex_0_255);
+//		System.out.printf("%10s mama %4$d %.2f %c", "hello", 2, 1.1, 123);
+		return string.matches(regex);
+	}
 }
